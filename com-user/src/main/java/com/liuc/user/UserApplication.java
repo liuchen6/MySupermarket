@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.security.SecurityProperties;
 @SpringBootApplication
 public class UserApplication {
     public static void main(String[] args) {
-        //test
+        //启动类
         SpringApplication.run(UserApplication.class);
     }
 }
