@@ -1,1 +1,12 @@
 Springboot默认配置文件：application.properties，application.yml
+
+原mybatis查询文件示例：
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+    <!-- namespace必须指向Dao接口 -->
+    <mapper namespace="com.liuc.user.mapper.UserMapper">
+
+        <select id="selectByPrimaryKey" resultType="com.liuc.user.pojo.User">
+            select * from user where id = #{id}
+        </select>
+    </mapper>

@@ -10,9 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class MyIntercepter implements HandlerInterceptor {
 
-    /*
-    * 前置方法，在handler方法执行之前执行
-    * */
+    /**
+     * 前置方法，在handler方法执行之前执行
+     * @param request
+     * @param response
+     * @param handler
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("前置方法正在执行！");
