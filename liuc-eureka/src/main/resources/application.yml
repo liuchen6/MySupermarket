@@ -1,0 +1,16 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: liuc-eureka   #将来会作为微服务的名称，注入到eureka容器
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka
+  server:
+    eviction-interval-timer-in-ms: 5000   #（单位是毫秒），是eureka server清理无效节点的时间间隔，默认60000毫秒，即60秒
+
+    #默认情况下，如果Eureka Server在一定时间内没有接收到某个微服务实例的心跳，Eureka Server将会注销该实例（默认90秒）。
+    #但是当网络分区故障发生时，微服务与Eureka Server之间无法正常通信，
+    #以上行为可能变得非常危险了——因为微服务本身其实是健康的，此时本不应该注销这个微服务。
+    enable-self-preservation: false   #关闭自我保护状态
