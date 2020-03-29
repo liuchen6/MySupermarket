@@ -4,6 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/liuc-service-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/liuc-service-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/liuc-eureka/pom.xml" />
       </list>
     </option>
   </component>

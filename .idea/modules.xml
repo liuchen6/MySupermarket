@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com-user/com-user.iml" filepath="$PROJECT_DIR$/com-user/com-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liuc-eureka/liuc-eureka.iml" filepath="$PROJECT_DIR$/liuc-eureka/liuc-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liuc-service-consumer/liuc-service-consumer.iml" filepath="$PROJECT_DIR$/liuc-service-consumer/liuc-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liuc-service-provider/liuc-service-provider.iml" filepath="$PROJECT_DIR$/liuc-service-provider/liuc-service-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
     </modules>
   </component>

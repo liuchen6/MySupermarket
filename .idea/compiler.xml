@@ -7,10 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com-user" />
+        <module name="liuc-eureka" />
+        <module name="liuc-service-consumer" />
+        <module name="liuc-service-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com-user" target="1.8" />
+      <module name="liuc-eureka" target="1.8" />
+      <module name="liuc-service-consumer" target="1.8" />
+      <module name="liuc-service-provider" target="1.8" />
       <module name="springboot" target="1.5" />
     </bytecodeTargetLevel>
   </component>

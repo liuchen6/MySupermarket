@@ -1,2 +1,11 @@
 server:
   port: 80
+spring:
+  application:
+    name: service-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    fetch-registry: true    #要不要去服务注册中心获取其他服务的地址
+    registry-fetch-interval-seconds: 5    #拉取服务的间隔时间

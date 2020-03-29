@@ -5,5 +5,15 @@ spring:
     url: jdbc:mysql:///testdb?serverTimezone=UTC
     username: root
     password: 123456
+  application:
+    name: service-provider  #将来会作为微服务的名称
 mybatis:
   type-aliases-package: com.liuc.service.pojo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    register-with-eureka: true    #服务提供方启动时，会检测该参数是否为true，如果为true就会注册给eureka
+  instance:
+    lease-expiration-duration-in-seconds: 15  #服务过期时间（超过该设置时间未发生心跳，则该服务挂了）
+    lease-renewal-interval-in-seconds: 5  #心跳时间（根据该设置的时间，进行心跳即服务请求）
